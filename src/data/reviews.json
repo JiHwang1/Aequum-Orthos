@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Jenkins",
+    "title": "Finally, Relief",
+    "rating": 5,
+    "verified": true,
+    "content": "I've tried custom orthotics that cost $400 and they felt like standing on concrete. The Aequum insoles provide the perfect balance—support where my arch should be, and the massage nodes actually keep my feet from aching after a 10-hour nursing shift.",
+    "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuCVHIDvsHQ9wovlANIIC5kqpmhv9YV8LY3090v_GwqyBM0dRgvftNkgKHWNMQ8TFNjrKjnGOiqMKZJV1YlZ4fFilu6t59RGiTfhfzLcbzpW9Znh38nH948KLs4ZW-GnMqRHQXCby4x3rT4kv6P3LXkz3doTnDI6vQ4NYtDXQ-5_H3eyy_0T_f4U5V692BskRceZLuA3MMRqUBuZi9HcmmZfnN2hfl10YoB-9cx2KHC6h5Ylzpn84u8I0o-m5RKCDPGLnizr4aRWy8c",
+    "date": "2 weeks ago"
+  },
+  {
+    "id": 2,
+    "name": "David Chen",
+    "title": "Different concept, it works",
+    "rating": 5,
+    "verified": true,
+    "content": "The texture takes about two days to get used to, but now I can't imagine wearing shoes without them. The chronic heel pain I had every morning is practically gone.",
+    "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuD8YmTafacYHKo3tjJqXYR89waMH7cPDwozVibq5jeZNTWcYtGJzkKYPOd7uqUQuycBHQQqqVg2AxCgr4vCDydh9XgKqgP_SNMrH5govUkvL8e6MhZzjCb-w7flC1oN8RRYpLp3sSSALakcsVhr6wbA9y5-ZXf-7BjNMb4U-LBhBoW-S7EMvU594Rp7qgmPo6hcTY7b4_CRlUXA-cfv-dFQcmM_IDtL5lXv3fxqK6L7MSw2lOsdiHPjVFVNRkmLstVgEVp5lswwRDU",
+    "date": "1 month ago"
+  },
+  {
+    "id": 3,
+    "name": "Emily R.",
+    "title": "Good, but sizing ran large",
+    "rating": 4,
+    "verified": true,
+    "content": "The support is excellent and they look incredibly premium. I had to trim the toe area quite a bit to fit my running shoes, but once fitted, they perform exactly as advertised.",
+    "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuD4LiFpu2qrxydGm8SriF4lTfT2GNUmDMRb_B2ztFbfhlGNaDw0TU5DO8eaKQ_SNj8XLTexqIoyD2V6zSm8hI--7C3D5kLz0BgoEDBuhw0F0jDfsewUHlB63vndIhcW8ICTeWGO_TEgy1eAM7yf0AvNwGubNPnrqvafRLSCpMtCI9XV5puuTtGCYK8TvrsubKKkLGQ6DFu3tv7qW_KLnA-gIdKvEOGCZ6j_nvSbHd7GF7FRyMTrQTW_6jQwubifaP0x8GNJJJb-4J0",
+    "date": "3 days ago"
+  }
+]

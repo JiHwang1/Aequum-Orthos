@@ -1,0 +1,56 @@
+[
+  {
+    "category": "Shipping & Returns",
+    "icon": "local_shipping",
+    "questions": [
+      {
+        "q": "How long does shipping take?",
+        "a": "Standard shipping typically takes 3-5 business days within the contiguous US. Expedited 2-day shipping is available at checkout."
+      },
+      {
+        "q": "What is your return policy?",
+        "a": "We offer a 90-day Comfort Guarantee. If you are not completely satisfied with the relief provided by Aequum Orthos, you can return them for a full refund, even if they have been worn."
+      },
+      {
+        "q": "Do you ship internationally?",
+        "a": "Currently, we ship to the US, Canada, UK, and Australia. International shipping times vary between 7-14 business days."
+      }
+    ]
+  },
+  {
+    "category": "Sizing & Fit",
+    "icon": "straighten",
+    "questions": [
+      {
+        "q": "How do I choose the right size?",
+        "a": "Our insoles correspond to standard shoe sizes. If you are a half size, we recommend sizing down (e.g., if you are an 8.5, choose size 8)."
+      },
+      {
+        "q": "Will they fit in any shoe?",
+        "a": "They are designed for shoes with removable factory insoles. This includes most athletic shoes, casual boots, and roomy dress shoes. They are not recommended for tight-fitting dress shoes or high heels."
+      },
+      {
+        "q": "Can I trim them to fit?",
+        "a": "Yes. The top edge is marked with trim lines. Use your original shoe insole as a template and carefully trim with sharp scissors if needed."
+      }
+    ]
+  },
+  {
+    "category": "Health & Usage",
+    "icon": "favorite",
+    "questions": [
+      {
+        "q": "Are these only for flat feet?",
+        "a": "While specifically engineered for flat feet and low arches, individuals with neutral arches seeking enhanced sensory stimulation and pressure relief can also benefit."
+      },
+      {
+        "q": "How long does it take to get used to them?",
+        "a": "The tactile nodes provide new sensory input. We recommend wearing them for 1-2 hours the first day, gradually increasing wear time over 5-7 days as your feet adapt."
+      },
+      {
+        "q": "Can I wash them?",
+        "a": "Yes. Hand wash with mild soap and lukewarm water. Air dry completely before reinserting into shoes. Do not machine wash or dry."
+      }
+    ]
+  }
+]

@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "id": "arch_type",
+      "title": "When you step out of the shower, what does your footprint look like?",
+      "description": "This helps us determine your baseline structural alignment.",
+      "options": [
+        {
+          "id": "flat",
+          "label": "The Whole Foot",
+          "description": "I see my entire foot, including the arch area.",
+          "icon": "steps"
+        },
+        {
+          "id": "neutral",
+          "label": "A Half-Moon",
+          "description": "There's a moderate curve connecting heel to toe.",
+          "icon": "footprint"
+        },
+        {
+          "id": "high",
+          "label": "Just Heel & Toe",
+          "description": "Very little connection visible between heel and toe.",
+          "icon": "height"
+        }
+      ]
+    },
+    {
+      "id": "pain_area",
+      "title": "Where do you experience the most discomfort?",
+      "description": "We'll tailor the sensory nodes to target your specific pain points.",
+      "options": [
+        {
+          "id": "heel",
+          "label": "Heel / Plantar",
+          "description": "Sharp pain especially in the mornings.",
+          "icon": "personal_injury"
+        },
+        {
+          "id": "arch",
+          "label": "Midfoot / Arch",
+          "description": "Aching along the inside of the foot.",
+          "icon": "healing"
+        },
+        {
+          "id": "ball",
+          "label": "Ball of Foot",
+          "description": "Burning or aching near the toes.",
+          "icon": "front_hand"
+        }
+      ]
+    }
+  ]
+}
