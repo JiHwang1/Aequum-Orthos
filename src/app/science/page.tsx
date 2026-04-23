@@ -31,7 +31,7 @@ export default function SciencePage() {
             <div className="absolute inset-0 bg-primary/5 blur-[60px] transform -translate-y-4 scale-105 rounded-full"></div>
             <div className="relative w-full aspect-[4/3] rounded-[2rem] overflow-hidden z-10">
               <Image 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw_Tx8VxXqvWZPUZ1YZeW1yflfvRjdG5z2li6OChLGyiSlwzbOSUePF04FjCr7HQ2O6erZKbR0Rvpr2Fmj9lVadurDggFQUQFytp9fn5TMzsIuV6Z0jp9UH8WWsW-YSOlGJZHiqsV6l838ogc3_cl1b825N-ulnXgUnwQMmJT2zzDZOmOkCQgsiLiyZuOZmYjzJjjRruVDDHlWJnt5pfthQKEkxsYhrf8IZipUt2LdoHpb0VIZRaPojpfnVWccn-ATWjWVWHP7Hpk" 
+                src="/science/cross_section.png" 
                 alt="Insole Cross Section" 
                 fill
                 className="object-cover" 
@@ -60,7 +60,7 @@ export default function SciencePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-surface-container-low rounded-xl p-8 flex flex-col h-full hover:bg-surface-container-high transition-colors duration-300">
               <div className="mb-8 rounded-lg overflow-hidden relative pb-[75%]">
-                <Image src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4LiFpu2qrxydGm8SriF4lTfT2GNUmDMRb_B2ztFbfhlGNaDw0TU5DO8eaKQ_SNj8XLTexqIoyD2V6zSm8hI--7C3D5kLz0BgoEDBuhw0F0jDfsewUHlB63vndIhcW8ICTeWGO_TEgy1eAM7yf0AvNwGubNPnrqvafRLSCpMtCI9XV5puuTtGCYK8TvrsubKKkLGQ6DFu3tv7qW_KLnA-gIdKvEOGCZ6j_nvSbHd7GF7FRyMTrQTW_6jQwubifaP0x8GNJJJb-4J0" alt="Arch Alignment" fill className="object-cover mix-blend-multiply opacity-90" />
+                <Image src="/science/arch_alignment.png" alt="Arch Alignment" fill className="object-cover mix-blend-multiply opacity-90" />
               </div>
               <h3 className="font-headline text-2xl font-bold text-on-surface mb-4">1. Arch Correction</h3>
               <p className="font-body text-on-surface-variant leading-relaxed">Dynamic medial support that resists collapse without imposing rigid, painful restrictions on natural gait mechanics.</p>
@@ -68,7 +68,7 @@ export default function SciencePage() {
 
             <div className="bg-surface-container-highest rounded-xl p-8 flex flex-col h-full transform md:-translate-y-8 shadow-[0_20px_50px_rgba(0,29,52,0.04)]">
               <div className="mb-8 rounded-lg overflow-hidden relative pb-[75%] bg-surface">
-                <Image src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZxruEzzjpRvV6YIYxn51V5qrVfQZwoqWtoTZzl_h5X6xJUvwd0EX4zlqdHI9qnzNK3DxK44oYUmx4bln4JY0DiIYCWKjxsPJZDU2WKC7YGncExD5j5A3dPcDeNjogo0XBe28xs8C5OHNg3BZcWaAoypjDwVVZmBGvAjfVV80PCtS9JhGYa1axzFMy5_P0cHcJFQeDt_FeCxviDG2c8sjD7QgegqnvbaJHF5ERbKRC-yVJnM9dhTQg85BVbwWxTUXCs2FWYBd-wIY" alt="Pressure Map" fill className="object-cover opacity-80" />
+                <Image src="/science/pressure_map.png" alt="Pressure Map" fill className="object-cover opacity-80" />
               </div>
               <h3 className="font-headline text-2xl font-bold text-on-surface mb-4">2. Pressure Redistribution</h3>
               <p className="font-body text-on-surface-variant leading-relaxed">Micro-cellular foam structures engineered to disperse peak forces away from the heel and metatarsal heads.</p>
@@ -76,7 +76,7 @@ export default function SciencePage() {
 
             <div className="bg-surface-container-low rounded-xl p-8 flex flex-col h-full hover:bg-surface-container-high transition-colors duration-300">
               <div className="mb-8 rounded-lg overflow-hidden relative pb-[75%]">
-                <Image src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVHIDvsHQ9wovlANIIC5kqpmhv9YV8LY3090v_GwqyBM0dRgvftNkgKHWNMQ8TFNjrKjnGOiqMKZJV1YlZ4fFilu6t59RGiTfhfzLcbzpW9Znh38nH948KLs4ZW-GnMqRHQXCby4x3rT4kv6P3LXkz3doTnDI6vQ4NYtDXQ-5_H3eyy_0T_f4U5V692BskRceZLuA3MMRqUBuZi9HcmmZfnN2hfl10YoB-9cx2KHC6h5Ylzpn84u8I0o-m5RKCDPGLnizr4aRWy8c" alt="Sensory Texture" fill className="object-cover mix-blend-multiply opacity-90" />
+                <Image src="/science/sensory_texture.png" alt="Sensory Texture" fill className="object-cover mix-blend-multiply opacity-90" />
               </div>
               <h3 className="font-headline text-2xl font-bold text-on-surface mb-4">3. Sensory Feedback</h3>
               <p className="font-body text-on-surface-variant leading-relaxed">Proprietary top-cover textures designed to stimulate plantar nerves, enhancing proprioception and balance awareness.</p>
@@ -110,7 +110,7 @@ export default function SciencePage() {
               </ul>
             </div>
             <div className="lg:w-1/2 w-full relative aspect-[4/3]">
-              <Image src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8YmTafacYHKo3tjJqXYR89waMH7cPDwozVibq5jeZNTWcYtGJzkKYPOd7uqUQuycBHQQqqVg2AxCgr4vCDydh9XgKqgP_SNMrH5govUkvL8e6MhZzjCb-w7flC1oN8RRYpLp3sSSALakcsVhr6wbA9y5-ZXf-7BjNMb4U-LBhBoW-S7EMvU594Rp7qgmPo6hcTY7b4_CRlUXA-cfv-dFQcmM_IDtL5lXv3fxqK6L7MSw2lOsdiHPjVFVNRkmLstVgEVp5lswwRDU" alt="Pronation Infographic" fill className="rounded-xl shadow-[0_20px_50px_rgba(0,29,52,0.06)] object-cover" />
+              <Image src="/science/pronation_info.png" alt="Pronation Infographic" fill className="rounded-xl shadow-[0_20px_50px_rgba(0,29,52,0.06)] object-cover" />
             </div>
           </div>
         </div>
