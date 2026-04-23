@@ -33,7 +33,7 @@ export default function Home() {
             </div>
             <div className="relative w-full h-[500px] lg:h-[700px] rounded-[2.5rem] overflow-hidden ambient-shadow isolate">
               <Image 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1Da4SRGURSlBe1QT82DZ_dwGo2O6F7EHIT_h8ujnGdPFWbcvM2ewrfMVMNU_vilTs74OdxGqlk8SuMDNO4aQd4snLHtlE_ZKm_jGd2-8ZalzOCz9zs4JGPbaZfL5x3ey7JvwxmLuBiMJN80OOs9fDVqcI7vZEqJyqq8T83wetIgEf8K8OqVAw9OcqaW-luoWrlgL6Jt9u3Tmy-2U00XRKEuFfdz3eB48teSrktzU4WpFhhMnGUR1DMLfiYJaYoMAaw4N_Iln_ldA"
+                src="/hero/main.png"
                 alt="Premium orthotic massage insole resting on a smooth marble surface, soft morning light, clinical yet calming aesthetic"
                 fill
                 className="absolute inset-0 object-cover z-0"
