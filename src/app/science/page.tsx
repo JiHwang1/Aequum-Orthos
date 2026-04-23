@@ -1,18 +1,20 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useLanguage } from "@/components/LanguageContext";
 
-export const metadata = {
-  title: "The Science of Sensory Support | Aequum Orthos",
-  description: "Moving beyond rigid plastic arches, we engineered a dynamic foundation that communicates with your nervous system.",
-};
+
 
 export default function SciencePage() {
+  const { t } = useLanguage();
+
   return (
     <>
       <section className="w-full bg-surface-container-low pt-24 pb-32 px-6 md:px-12 lg:px-24">
         <div className="max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
           <div className="lg:col-span-5 space-y-8 z-10">
-            <span className="font-label text-sm uppercase tracking-[0.05em] text-secondary">Clinical Precision</span>
+            <span className="font-label text-sm uppercase tracking-[0.05em] text-secondary">{t("Clinical Precision")}</span>
             <h1 className="font-headline text-5xl md:text-7xl font-bold tracking-[-0.02em] text-on-surface leading-tight">
               The Science of<br/>Sensory Support.
             </h1>

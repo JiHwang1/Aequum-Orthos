@@ -1,14 +1,13 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import products from "@/data/products.json";
-
-export async function generateStaticParams() {
-  return products.map((p) => ({
-    slug: p.slug,
-  }));
-}
+import { useLanguage } from "@/components/LanguageContext";
 
 export default function ProductDetailPage({ params }: { params: { slug: string } }) {
+  const { t } = useLanguage();
+
   const product = products.find(p => p.slug === params.slug) || products[0];
 
   return (
@@ -16,8 +15,7 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
       <section className="pt-20 lg:pt-32 pb-24 px-6 md:px-12 lg:px-24">
         <div className="max-w-screen-2xl mx-auto">
           <Link href="/" className="inline-flex items-center text-sm font-label text-on-surface-variant hover:text-primary transition-colors mb-12">
-            <span className="material-symbols-outlined mr-2 text-sm">arrow_back</span>
-            Back to Shop
+            <span className="material-symbols-outlined mr-2 text-sm">arrow_back</span>{t("Back")} to Shop
           </Link>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
@@ -62,7 +60,7 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
 
               <div className="mb-10 p-6 bg-surface-container-low rounded-2xl ghost-border">
                 <div className="flex justify-between items-center mb-4">
-                  <span className="font-headline font-bold text-on-surface">Select Size</span>
+                  <span className="font-headline font-bold text-on-surface">{t("Select Size")}</span>
                   <button className="text-secondary text-sm font-label underline underline-offset-4 hover:text-primary transition-colors">Size Guide</button>
                 </div>
                 <div className="grid grid-cols-4 gap-3">
@@ -75,7 +73,7 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
               </div>
 
               <button className="w-full py-4 rounded-full tactile-gradient text-on-primary font-label text-sm uppercase tracking-widest shadow-[0_10px_30px_rgba(0,29,52,0.15)] hover:shadow-[0_15px_40px_rgba(0,29,52,0.2)] hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-3">
-                <span className="material-symbols-outlined text-xl">shopping_cart</span> Add to Cart — ${product.price}
+                <span className="material-symbols-outlined text-xl">shopping_cart</span>{t("Add to Cart")} — ${product.price}
               </button>
             </div>
           </div>

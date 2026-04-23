@@ -1,7 +1,11 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { useLanguage } from "@/components/LanguageContext";
 
 export default function Home() {
+  const { t } = useLanguage();
   return (
     <>
       <section className="relative pt-20 pb-32 lg:pt-32 lg:pb-48 overflow-hidden bg-surface">
@@ -9,22 +13,21 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="max-w-2xl relative z-10">
               <span className="inline-block py-1.5 px-4 rounded-full bg-surface-container-highest text-on-surface text-xs font-semibold tracking-[0.05em] uppercase mb-8 font-label ghost-border">
-                Clinical Grade Precision
+                {t("Clinical Precision")}
               </span>
               <h1 className="text-5xl lg:text-7xl font-extrabold tracking-[-0.02em] text-primary mb-6 font-headline leading-tight">
-                Precision Support.<br />
-                <span className="text-secondary">Sensory Comfort.</span>
+                {t("Precision Support. Sensory Comfort.")}
               </h1>
               <p className="text-lg lg:text-xl text-on-surface-variant mb-10 font-body leading-relaxed max-w-lg">
                 The first orthopedic insole designed for flat feet with integrated massage-relief technology. Engineered for tactile recovery with every step.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/product/relief-plus" className="tactile-gradient text-on-primary px-8 py-4 rounded-full text-base font-semibold tracking-wide hover:opacity-90 transition-opacity text-center inline-flex justify-center items-center gap-2">
-                  Shop the Collection
+                  {t("Shop Now")}
                   <span className="material-symbols-outlined text-sm">arrow_forward</span>
                 </Link>
                 <Link href="/quiz" className="px-8 py-4 rounded-full bg-surface-container-highest text-on-surface text-base font-medium hover:bg-surface-container-high transition-colors text-center inline-flex justify-center items-center gap-2">
-                  Take the Fit Quiz
+                  {t("Quiz")}
                 </Link>
               </div>
             </div>

@@ -1,12 +1,14 @@
+"use client";
+
 import Image from "next/image";
 import reviews from "@/data/reviews.json";
+import { useLanguage } from "@/components/LanguageContext";
 
-export const metadata = {
-  title: "Clinical Reviews & Testimonials | Aequum Orthos",
-  description: "Read why medical professionals and everyday users trust Aequum Orthos.",
-};
+
 
 export default function ReviewsPage() {
+  const { t } = useLanguage();
+
   return (
     <div className="w-full bg-surface min-h-screen pt-20 lg:pt-32 pb-24">
       <section className="px-6 md:px-12 lg:px-24 mb-24">
@@ -100,8 +102,7 @@ export default function ReviewsPage() {
           <div className="absolute inset-0 bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuCVHIDvsHQ9wovlANIIC5kqpmhv9YV8LY3090v_GwqyBM0dRgvftNkgKHWNMQ8TFNjrKjnGOiqMKZJV1YlZ4fFilu6t59RGiTfhfzLcbzpW9Znh38nH948KLs4ZW-GnMqRHQXCby4x3rT4kv6P3LXkz3doTnDI6vQ4NYtDXQ-5_H3eyy_0T_f4U5V692BskRceZLuA3MMRqUBuZi9HcmmZfnN2hfl10YoB-9cx2KHC6h5Ylzpn84u8I0o-m5RKCDPGLnizr4aRWy8c')] bg-cover bg-center opacity-10 mix-blend-overlay z-0"></div>
           <h2 className="font-headline text-4xl md:text-5xl font-bold text-on-primary mb-6 relative z-10">Ready to feel the relief?</h2>
           <p className="font-body text-primary-fixed mb-10 max-w-lg mx-auto relative z-10">Join thousands of others who have stepped into a more comfortable life. Backed by our 90-day Comfort Guarantee.</p>
-          <button className="px-8 py-4 bg-surface text-primary rounded-full font-label text-sm uppercase tracking-widest font-bold hover:scale-105 transition-transform duration-300 relative z-10">
-            Shop Aequum Orthos
+          <button className="px-8 py-4 bg-surface text-primary rounded-full font-label text-sm uppercase tracking-widest font-bold hover:scale-105 transition-transform duration-300 relative z-10">{t("Shop")} Aequum Orthos
           </button>
         </div>
       </section>

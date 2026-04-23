@@ -12,6 +12,8 @@ export const metadata: Metadata = {
   description: "Precision Support. Sensory Comfort.",
 };
 
+import { LanguageProvider } from "@/components/LanguageContext";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -26,11 +28,13 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-surface text-on-surface antialiased font-body min-h-screen flex flex-col">
-        <Navbar />
-        <main className="flex-grow flex flex-col">
-          {children}
-        </main>
-        <Footer />
+        <LanguageProvider>
+          <Navbar />
+          <main className="flex-grow flex flex-col">
+            {children}
+          </main>
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );

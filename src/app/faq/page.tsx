@@ -1,16 +1,18 @@
-import faqData from "@/data/faq.json";
+"use client";
 
-export const metadata = {
-  title: "FAQ & Support | Aequum Orthos",
-  description: "Find answers to your questions about shipping, sizing, and our comfort guarantee.",
-};
+import faqData from "@/data/faq.json";
+import { useLanguage } from "@/components/LanguageContext";
+
+
 
 export default function FAQPage() {
+  const { t } = useLanguage();
+
   return (
     <div className="w-full bg-surface min-h-screen">
       <section className="bg-surface-container-low pt-24 pb-16 px-6 md:px-12">
         <div className="max-w-3xl mx-auto text-center space-y-6">
-          <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-[-0.02em] text-on-surface">How can we help?</h1>
+          <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-[-0.02em] text-on-surface">{t("How can we help?")}</h1>
           <p className="font-body text-lg text-on-surface-variant">Find answers about sizing, shipping, and the science behind the relief.</p>
           <div className="relative max-w-xl mx-auto mt-8">
             <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline-variant">search</span>
