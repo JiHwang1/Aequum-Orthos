@@ -1,11 +1,14 @@
 {
-  "EN": {},
+  "EN": {
+    "Gallery": "Gallery"
+  },
   "KR": {
     "Aequum Orthos": "Aequum Orthos",
     "Shop": "쇼핑",
     "Science": "과학적 배경",
     "Reviews": "리뷰",
     "Quiz": "추천 퀴즈",
+    "Gallery": "갤러리",
     "FAQ": "자주 묻는 질문",
     "Shop Now": "구매하기",
     "Cart": "장바구니",

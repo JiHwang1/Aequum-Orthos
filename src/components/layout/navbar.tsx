@@ -21,6 +21,7 @@ export function Navbar() {
           <li><Link href="/products" className="text-slate-900 dark:text-stone-50 border-b-2 border-slate-900 dark:border-stone-50 pb-1 font-headline font-bold tracking-tighter transition-all duration-300">{t('Shop')}</Link></li>
           <li><Link href="/science" className="text-slate-500 dark:text-stone-400 font-medium hover:text-slate-900 dark:hover:text-stone-200 transition-all duration-300 font-headline font-bold tracking-tighter">{t('Science')}</Link></li>
           <li><Link href="/reviews" className="text-slate-500 dark:text-stone-400 font-medium hover:text-slate-900 dark:hover:text-stone-200 transition-all duration-300 font-headline font-bold tracking-tighter">{t('Reviews')}</Link></li>
+          <li><Link href="/gallery" className="text-slate-500 dark:text-stone-400 font-medium hover:text-slate-900 dark:hover:text-stone-200 transition-all duration-300 font-headline font-bold tracking-tighter">{t('Gallery')}</Link></li>
           <li><Link href="/quiz" className="text-slate-500 dark:text-stone-400 font-medium hover:text-slate-900 dark:hover:text-stone-200 transition-all duration-300 font-headline font-bold tracking-tighter">{t('Quiz')}</Link></li>
           <li><Link href="/faq" className="text-slate-500 dark:text-stone-400 font-medium hover:text-slate-900 dark:hover:text-stone-200 transition-all duration-300 font-headline font-bold tracking-tighter">{t('FAQ')}</Link></li>
         </ul>
