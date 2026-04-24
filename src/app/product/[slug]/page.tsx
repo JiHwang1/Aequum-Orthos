@@ -1,12 +1,15 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import products from "@/data/products.json";
 import { useLanguage } from "@/components/LanguageContext";
+import { ImageModal } from "@/components/ui/image-modal";
 
 export default function ProductDetailPage({ params }: { params: { slug: string } }) {
   const { t } = useLanguage();
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const product = products.find(p => p.slug === params.slug) || products[0];
 
@@ -20,15 +23,22 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
             <div className="lg:col-span-7 flex flex-col gap-6">
-              <div className="relative w-full aspect-[4/3] rounded-[2rem] overflow-hidden bg-surface-container-low ghost-border">
+              <div 
+                className="relative w-full aspect-[4/3] rounded-[2rem] overflow-hidden bg-surface-container-low ghost-border cursor-pointer"
+                onClick={() => setSelectedImage(product.images[0])}
+              >
                 <Image src={product.images[0]} alt={product.name} fill className="object-cover hover:scale-105 transition-transform duration-700 ease-out" priority/>
-                <button className="absolute top-6 right-6 w-12 h-12 rounded-full glass-panel flex items-center justify-center text-on-surface hover:text-secondary transition-colors z-10">
+                <div className="absolute top-6 right-6 w-12 h-12 rounded-full glass-panel flex items-center justify-center text-on-surface hover:text-secondary transition-colors z-10">
                   <span className="material-symbols-outlined">zoom_in</span>
-                </button>
+                </div>
               </div>
               <div className="grid grid-cols-3 gap-6">
                 {product.images.slice(1).map((img, idx) => (
-                  <div key={idx} className="relative aspect-square rounded-2xl overflow-hidden cursor-pointer ghost-border opacity-70 hover:opacity-100 transition-opacity">
+                  <div 
+                    key={idx} 
+                    className="relative aspect-square rounded-2xl overflow-hidden cursor-pointer ghost-border opacity-70 hover:opacity-100 transition-opacity"
+                    onClick={() => setSelectedImage(img)}
+                  >
                     <Image src={img} alt={`${product.name} detail`} fill className="object-cover" />
                   </div>
                 ))}
@@ -79,6 +89,13 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
           </div>
         </div>
       </section>
+
+      <ImageModal 
+        isOpen={!!selectedImage} 
+        onClose={() => setSelectedImage(null)} 
+        imageSrc={selectedImage || ""} 
+        imageAlt={product.name} 
+      />
     </div>
   );
 }

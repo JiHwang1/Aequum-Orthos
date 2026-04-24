@@ -1,7 +1,9 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import { useLanguage } from "@/components/LanguageContext";
+import { ImageModal } from "@/components/ui/image-modal";
 
 const galleryImages = [
   { src: "/gallery/asdaczxc.png", alt: "Clinical Product View" },
@@ -12,6 +14,7 @@ const galleryImages = [
 
 export default function GalleryPage() {
   const { t } = useLanguage();
+  const [selectedImage, setSelectedImage] = useState<{ src: string, alt: string } | null>(null);
 
   return (
     <main className="min-h-screen bg-surface pt-24 pb-20">
@@ -32,7 +35,8 @@ export default function GalleryPage() {
           {galleryImages.map((image, index) => (
             <div 
               key={index} 
-              className="group relative aspect-[16/10] rounded-[2.5rem] overflow-hidden ambient-shadow hover-lift bg-surface-container transition-all duration-700 isolate"
+              className="group relative aspect-[16/10] rounded-[2.5rem] overflow-hidden ambient-shadow hover-lift bg-surface-container transition-all duration-700 isolate cursor-pointer"
+              onClick={() => setSelectedImage(image)}
             >
               <Image
                 src={image.src}
@@ -53,6 +57,13 @@ export default function GalleryPage() {
           ))}
         </div>
       </div>
+
+      <ImageModal 
+        isOpen={!!selectedImage} 
+        onClose={() => setSelectedImage(null)} 
+        imageSrc={selectedImage?.src || ""} 
+        imageAlt={selectedImage?.alt || ""} 
+      />
     </main>
   );
 }
